@@ -38,9 +38,9 @@ Builds/
 
 # Temporary Unity build/output folders created by local build pipelines
 # Example: projects/GaussianExample/utmp/...
-utmp/
-**/utmp/
-projects/**/utmp/
+.utmp/
+**/.utmp/
+projects/**/.utmp/
 
 # Archivos/carpetas generadas por Unity
 /Library/
