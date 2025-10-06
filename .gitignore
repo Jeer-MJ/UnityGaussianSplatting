@@ -1,4 +1,83 @@
+# .gitignore básico para proyectos Unity
+# Ignora carpetas temporales, binarios generados, archivos de IDE y OS
+
+# Sistem a operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de usuario
+*.swp
+*.swo
+
+# Visual Studio, Rider, VS Code
+.vs/
+.vscode/
 *.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Builds
+Build/
+Builds/
+*.apk
+*.aab
+*.unitypackage
+
+# Temporary Unity build/output folders created by local build pipelines
+# Example: projects/GaussianExample/utmp/...
+utmp/
+**/utmp/
+projects/**/utmp/
+
+# Archivos/carpetas generadas por Unity
+/Library/
+/Temp/
+/Obj/
+/Build/
+/Builds/
+/UserSettings/
+/MemoryCaptures/
+
+# Reports y logs
+crashlytics-build.properties
+crash-report-*
+*.log
+
+# Archivos autogenerados por Unity
+sysinfo.txt
+*.stacktrace
+*_BackUpThisFolder_ButDontShipIt/
+*.bak
+
+# Gradle / Android Studio
+.gradle/
+gradle/
+build/
+captures/
+
+# Keystore
+*.keystore
+
+# Otros
+obj/
+Library/**/com.unity.ide.visualstudio
+*.sublime-workspace
+.history/
+
+# Fin*.csproj
 *.sln
 .DS_Store
 .idea
