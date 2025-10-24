@@ -634,7 +634,10 @@ namespace GaussianSplatting.Runtime
 
             // sort the splats
             EnsureSorterAndRegister();
-            m_Sorter.Dispatch(cmd, m_SorterArgs);
+            if (m_Sorter.Valid)
+                m_Sorter.Dispatch(cmd, m_SorterArgs);
+            else
+                Debug.LogWarning("GPU sorting not supported on this platform. Gaussian splats may not render correctly due to lack of depth sorting.");
             cmd.EndSample(s_ProfSort);
         }
 
