@@ -960,19 +960,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12d929a7f62c48adbe9ff45c9a33ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Asset: {fileID: 11400000, guid: 726bdd652beb9064f842b862aa18bd6e, type: 2}
+  m_Asset: {fileID: 11400000, guid: f5588b1d3051bbd408902b86f72b20b4, type: 2}
   m_RenderOrder: 0
   m_SplatScale: 1
   m_OpacityScale: 1
   m_SHOrder: 3
   m_SHOnly: 0
   m_SortNthFrame: 1
-  m_EnableQuest3Optimizations: 1
-  m_MaxSplatsForMobileVR: 80000
-  m_EnableLOD: 1
-  m_LODStartDistance: 15
-  m_LODMaxDistance: 40
-  m_MobileSHOrder: 1
   m_RenderMode: 0
   m_PointDisplaySize: 3
   m_Cutouts:
