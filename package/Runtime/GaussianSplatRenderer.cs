@@ -614,6 +614,12 @@ namespace GaussianSplatting.Runtime
             if (cam.cameraType == CameraType.Preview)
                 return;
 
+            // En Android, evitamos el sorting por GPU ya que VRGaussianSplatManager maneja el sorting
+            #if UNITY_ANDROID && !UNITY_EDITOR
+            // Skip GPU sorting on Android - VR manager handles it
+            return;
+            #endif
+
             Matrix4x4 worldToCamMatrix = cam.worldToCameraMatrix;
             worldToCamMatrix.m20 *= -1;
             worldToCamMatrix.m21 *= -1;

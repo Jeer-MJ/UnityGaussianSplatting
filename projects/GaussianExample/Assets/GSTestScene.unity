@@ -286,7 +286,7 @@ Transform:
   m_GameObject: {fileID: 73733669}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.6, y: 1.62, z: -0.386}
+  m_LocalPosition: {x: 0, y: 0.636, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -642,6 +642,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4880563057410734593, guid: 95bd04140a47c1545a9f7bc5ebf2694b, type: 3}
+      propertyPath: cameraPositionQuantization
+      value: 0.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880563057410734593, guid: 95bd04140a47c1545a9f7bc5ebf2694b, type: 3}
       propertyPath: 'splatObjects.Array.data[0]'
       value: 
       objectReference: {fileID: 1609192434}
@@ -912,6 +916,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1561228026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1180150243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180150245}
+  - component: {fileID: 1180150244}
+  m_Layer: 0
+  m_Name: GSCutout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1180150244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180150243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c57a1c501bd05549ae157cc474bd4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Type: 1
+  m_Invert: 1
+--- !u!4 &1180150245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180150243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.135, y: -0.108, z: 0.0342}
+  m_LocalScale: {x: 1.376831, y: 0.6, z: 1.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1609192435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1206714169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,17 +1149,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12d929a7f62c48adbe9ff45c9a33ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Asset: {fileID: 11400000, guid: 88399c1b83db41144bba4f232acd2c02, type: 2}
+  m_Asset: {fileID: 11400000, guid: 769ef9b4a70f1934aa3332a3e46df848, type: 2}
   m_RenderOrder: 0
   m_SplatScale: 1
   m_OpacityScale: 1
-  m_SHOrder: 3
+  m_SHOrder: 0
   m_SHOnly: 0
   m_SortNthFrame: 1
   m_RenderMode: 0
-  m_PointDisplaySize: 3
+  m_PointDisplaySize: 3.99
   m_Cutouts:
-  - {fileID: 0}
+  - {fileID: 1180150244}
   m_ShaderSplats: {fileID: 4800000, guid: ed800126ae8844a67aad1974ddddd59c, type: 3}
   m_ShaderComposite: {fileID: 4800000, guid: 7e184af7d01193a408eb916d8acafff9, type: 3}
   m_ShaderDebugPoints: {fileID: 4800000, guid: b44409fc67214394f8f47e4e2648425e, type: 3}
@@ -1123,13 +1173,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609192433}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.014765739, y: -0.0040751235, z: 0.9991727, w: 0.037673377}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: -1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_LocalScale: {x: 1.95, y: 1.95, z: -1.95}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1180150245}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0.403, y: -1.709, z: 175.675}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &1609192436
 MonoBehaviour:
   m_ObjectHideFlags: 0
