@@ -2,6 +2,7 @@
   "dependencies": {
     "com.meta.xr.sdk.all": "78.0.0",
     "com.unity.multiplayer.center": "1.0.0",
+    "com.unity.render-pipelines.universal": "17.0.4",
     "com.unity.xr.management": "4.5.2",
     "com.unity.xr.openxr": "1.15.1",
     "org.nesnausk.gaussian-splatting": "file:../../../package",
