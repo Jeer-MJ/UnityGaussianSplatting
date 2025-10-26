@@ -113,10 +113,10 @@ namespace GaussianSplatting.OptimizedVR.Editor
             EditorGUILayout.LabelField("Documentation", EditorStyles.boldLabel);
             if (GUILayout.Button("Open Integration Guide"))
             {
-                string guidePath = "Assets/GaussianSplatting/OptimizedVR/INTEGRATION_GUIDE.md";
+                string guidePath = Path.Combine(Application.dataPath, "GaussianSplatting/OptimizedVR/INTEGRATION_GUIDE.md");
                 if (File.Exists(guidePath))
                 {
-                    System.Diagnostics.Process.Start(guidePath);
+                    EditorUtility.OpenWithDefaultApp(guidePath);
                 }
                 else
                 {
@@ -127,10 +127,10 @@ namespace GaussianSplatting.OptimizedVR.Editor
             
             if (GUILayout.Button("Open README"))
             {
-                string readmePath = "Assets/GaussianSplatting/OptimizedVR/README.md";
+                string readmePath = Path.Combine(Application.dataPath, "GaussianSplatting/OptimizedVR/README.md");
                 if (File.Exists(readmePath))
                 {
-                    System.Diagnostics.Process.Start(readmePath);
+                    EditorUtility.OpenWithDefaultApp(readmePath);
                 }
                 else
                 {
