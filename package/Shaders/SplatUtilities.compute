@@ -30,6 +30,8 @@
 
 // GPU sorting needs wave ops
 #pragma use_dxc
+#pragma require wavebasic
+#pragma require waveballot
 
 #include "DeviceRadixSort.hlsl"
 #include "GaussianSplatting.hlsl"
