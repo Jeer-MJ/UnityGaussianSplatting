@@ -24,6 +24,10 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  ******************************************************************************/
+// Enable wave operations for Vulkan 1.1
+#pragma require waveops
+
+#define KEYS_PER_THREAD     15U
 #define KEYS_PER_THREAD     15U 
 #define D_DIM               256U
 #define PART_SIZE           3840U
